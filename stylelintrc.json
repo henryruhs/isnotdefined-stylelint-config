@@ -71,10 +71,6 @@
 		"declaration-no-important": true,
 		"font-family-name-quotes": "always-where-recommended",
 		"font-weight-notation": "numeric",
-		"function-disallowed-list":
-		[
-			"calc"
-		],
 		"function-name-case": "lower",
 		"function-url-quotes": "always",
 		"length-zero-no-unit": true,
@@ -92,7 +88,16 @@
 			}
 		],
 		"order/properties-alphabetical-order": true,
-		"property-no-vendor-prefix": true,
+		"property-no-vendor-prefix":
+		[
+			true,
+			{
+				"ignoreProperties":
+				[
+					"appearance"
+				]
+			}
+		],
 		"rule-empty-line-before":
 		[
 			"always",
